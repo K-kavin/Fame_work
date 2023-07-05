@@ -18,7 +18,9 @@ public class Base_Test implements Framework_const1
 	{
 		System.setProperty(chrome_key1,chrome_value1);
 		driver=new ChromeDriver();
+		//for launching the browser
 		driver.get(base_url);
+		//to enter the url
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 	}
